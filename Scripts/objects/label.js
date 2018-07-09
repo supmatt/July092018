@@ -12,7 +12,17 @@ var object;
 (function (object) {
     var Lable = /** @class */ (function (_super) {
         __extends(Lable, _super);
-        // Constructors
+        /**
+         *Creates an instance of Lable.
+         * @param {string} text
+         * @param {string} fontSize
+         * @param {string} fontFamily
+         * @param {string} fontColour
+         * @param {number} [x=0]
+         * @param {number} [y=0]
+         * @param {boolean} [isCentered=false]
+         * @memberof Lable
+         */
         function Lable(text, fontSize, fontFamily, fontColour, x, y, isCentered) {
             if (x === void 0) { x = 0; }
             if (y === void 0) { y = 0; }
@@ -28,6 +38,12 @@ var object;
             _this.y = y;
             return _this;
         }
+        /**
+         *
+         *
+         * @private
+         * @memberof Lable
+         */
         Lable.prototype._intialize = function () {
             this.width = this.getBounds().width;
             this.height = this.getBounds().height;
